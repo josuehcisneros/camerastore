@@ -1,0 +1,139 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Apply a natural box layout model to all elements */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #efefff;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #3a7bd5, #41738d);
+    color: white;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    font-size: 24px;
+  }
+  
+  header div {
+    padding-left: 1vw;
+    text-align: right;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  nav button {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: 180px;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1e66a1, #297dc2);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+  nav button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #1976D2, #2196F3);
+  }
+  
+  header img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+  #viewer {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #viewer img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  #viewer h2 {
+    margin: 1rem 0;
+    color: #3a7bd5;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  #viewer h3 {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 1.4rem;
+  }
+  
+  #viewer ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    color: #4caf50;
+  }
+  
+  #viewer li::marker {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  #viewer p {
+    margin: 1rem 0;
+    line-height: 1.8;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 12px;
+    background: linear-gradient(90deg, #3a6073, #3a7bd5);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 5%;
+    margin-top: 2rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
